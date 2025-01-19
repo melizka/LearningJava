@@ -10,6 +10,10 @@ public class operators {
 
         task3();
 
+        task4();
+
+        task5();
+
     }
 
     // Завдання 1
@@ -27,16 +31,17 @@ public class operators {
 
     //Завдання 2
     public static void task2() {
-        int age = 25;
+        int age = 10;
         boolean isGreaterThanEighteen = age > 18;
         boolean isSmallerThanSixty = age < 60;
 
         if (isGreaterThanEighteen && isSmallerThanSixty) {
             System.out.println("Вік підходить для роботи");
-        }else{
+        } else {
             System.out.println("Вік не підходить для роботи");
         }
     }
+
     //Завдання 3
     public static void task3() {
         boolean isBlocked = false;
@@ -46,5 +51,29 @@ public class operators {
         } else {
             System.out.println("Користувач заблокований.");
         }
+    }
+
+    //Завдання 4
+    public static void task4() {
+
+        int num1 = 5;
+        int num2 = 6;
+        if (num1 == num2) {
+            System.out.println("числа рівні");
+        } else {
+            System.out.println("числа не рівні");
+        }
+    }
+    //Завдання 5 Метод equals() перевіряє, чи вміст двох об'єктів однаковий. Для рядків він порівнює всі символи в рядках. Якщо рядки мають однаковий вміст, метод equals() повертає true.
+    public static void task5() {
+        String str1 = new String("Hello");
+        String str2 = new String("Hello");
+
+        System.out.println(str1 == str2);  // false, бо це різні об'єкти в пам'яті
+
+        String str3 = "Hello";
+        String str4 = "Hello";
+
+        System.out.println(str3 == str4);  // true, бо це однаковий об'єкт у пулі літералів
     }
 }
