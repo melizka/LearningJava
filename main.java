@@ -12,8 +12,8 @@ class Car {
 public class main {
     public static void main(String[] args) {
 
-        Car car1 = new Car("toyota", 2020);
-        Car car2 = new Car("toyota", 2020);
+        String car1 = new String("toyota");
+        String car2 = new String("toyota");
 
         System.out.println("Результат ==: " + (car1 == car2));
         System.out.println("Результат equals(): " + car1.equals(car2));
