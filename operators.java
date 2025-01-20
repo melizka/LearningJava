@@ -14,6 +14,9 @@ public class operators {
 
         task5();
 
+        task6();
+
+
     }
 
     // Завдання 1
@@ -64,6 +67,7 @@ public class operators {
             System.out.println("числа не рівні");
         }
     }
+
     //Завдання 5 Метод equals() перевіряє, чи вміст двох об'єктів однаковий. Для рядків він порівнює всі символи в рядках. Якщо рядки мають однаковий вміст, метод equals() повертає true.
     public static void task5() {
         String str1 = new String("Hello");
@@ -76,4 +80,24 @@ public class operators {
 
         System.out.println(str3 == str4);  // true, бо це однаковий об'єкт у пулі літералів
     }
+
+    //Завдання 6. Оператор == та equals() Уявіть, що у вас є дві адреси:
+    //
+    //    str1 вказує на будинок з написом "Hello".
+    //    str2 також вказує на будинок з написом "Hello", але це два різних будинки.
+    //
+    //Оператор == перевіряє, чи це одна і та ж адреса.
+    //Метод equals() перевіряє, чи однаковий текст на обох будинках.
+
+    public static void task6() {
+        String str1 = "Hello";
+        String str3 = "Bye";
+
+        String str2 = new String("Hello");
+        System.out.println(str1 == str2);
+        System.out.println(str1 == str3);
+        System.out.println(str1.equals(str3));
+        System.out.println(str1.equals(str2));
+    }
 }
+
