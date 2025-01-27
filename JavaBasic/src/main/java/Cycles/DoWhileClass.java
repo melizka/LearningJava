@@ -4,12 +4,12 @@ public class DoWhileClass {
 
     public static void main(String[] args) {
 
-        int chyslo = 6;
+        int num = 6;
         do
         {
-            System.out.println(chyslo);
-            chyslo++;
+            System.out.println(num);
+            num++;
         }
-        while (chyslo<=7);
+        while (num<=7);
     }
 }

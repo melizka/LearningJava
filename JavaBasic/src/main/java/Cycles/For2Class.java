@@ -4,13 +4,13 @@ public class For2Class {
 
     public static void main(String[] args) {
 
-        int number = 7;
+        int num = 7;
 
-        System.out.println("Multiplication table " + number + ":");
+        System.out.println("Multiplication table " + num + ":");
 
-        for (int chyslo = 1; chyslo <= 10; chyslo++) {
-            int result = number * chyslo;
-            System.out.println(number + "x" + chyslo + " = " + result);
+        for (int a = 1; a <= 10; a++) {
+            int result = num * a;
+            System.out.println(num + "x" + a + " = " + result);
         }
     }
 }

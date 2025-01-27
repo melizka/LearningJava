@@ -7,12 +7,12 @@ public class While2Class {
     public static void main(String[] args) {
 
         Scanner skan = new Scanner(System.in);
-        String slovo = "";
+        String a = "";
 
-        while (slovo.equals("чай") != true)
+        while (a.equalsIgnoreCase("чай") != true)
         {
             System.out.println("хочу чаю");
-            slovo = skan.nextLine();
+            a = skan.nextLine();
         }
         System.out.println("Дякую");
     }
