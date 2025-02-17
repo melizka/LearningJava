@@ -17,11 +17,7 @@ public class WhileClass {
                 System.out.println("Password cannot be empty. Please enter a valid password:");
                 continue;
             }
-                if (!password.equals(correctPassword)) {
-                    System.out.println("Incorrect password. Try again.");
-                }
-            }
-
+        }
             System.out.println("Successful login!");
         scan.close();
         }
