@@ -13,8 +13,12 @@ public class WhileClass {
             System.out.println("Enter your password");
             password = scan.nextLine();
 
+            if (password == null || password.isEmpty()) {
+                System.out.println("Password cannot be empty. Please enter a valid password:");
+                continue;
+            }
         }
-        System.out.println("Succsessfull!");
+            System.out.println("Successful login!");
         scan.close();
+        }
     }
-}
