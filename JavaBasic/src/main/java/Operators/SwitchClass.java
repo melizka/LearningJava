@@ -8,7 +8,9 @@ public class SwitchClass {
         System.out.println("Введіть першу літеру вашої області:");
         String litera = "";
         Scanner skan = new Scanner(System.in);
+
         litera = skan.nextLine();
+        litera = litera.toUpperCase();
 
         switch (litera) {
             case "В":

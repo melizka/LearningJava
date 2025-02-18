@@ -1,29 +1,26 @@
 package Operators;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class IfClass {
-    public static void main (String[]  args) {
-        int price_toyota = 10000;
-        int price_skoda = 9000;
-        int price_ferrari = 15000;
+    public static void main (String[] args) {
+        Map<String, Integer> cars = new HashMap<>();
+        cars.put("Ferrari", 15000);
+        cars.put("Toyota", 10000);
+        cars.put("Skoda", 9000);
 
         int salary = 200000;
+        String bestCar = "It looks lke you will go on foot";
 
-        if (salary >= price_skoda)
-        {
-            System.out.println("I can buy a skoda car");
+        for (Map.Entry<String, Integer> entry : cars.entrySet()) {
+            if (salary >= entry.getValue() &&
+                (bestCar.equals("It looks like you will go on foot") ||
+                entry.getValue() > cars.getOrDefault(bestCar, 0))) {
+                bestCar = entry.getKey();
+            }
         }
-        else if (salary >= price_ferrari)
-        {
-            System.out.println("I can buy a ferrari car");
-        }
-        else if (salary >= price_toyota)
-        {
-            System.out.println("I can buy a toyota car");
-        }
-        else
-        {
-            System.out.println("It look like you will go on foot");
-        }
+        System.out.println("I can buy a " + bestCar);
 
     }
 }
